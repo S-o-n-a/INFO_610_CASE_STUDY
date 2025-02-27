@@ -1,0 +1,19 @@
+Creating a database for Christ University activities
+
+ 
+
+Suppose we are given the task of creating a database for storing data within CHRIST UNIVERSITY. The task is to create an Entity Relationship Diagram (ERD) and then convert the ERD to a relational modelling using post-GRE SQL database. The requirements are as follows.
+
+CHRIST UNIVERSITY has many students who come from all over India to study PGDM. It is necessary to store student information in the Database. A CHRIST UNIVERSITY student is identified by a student Id. The other relevant information that needs to be stored for a student are student name, DOB, Gender, all prior Degrees obtained till today , home address and the specialization in which they have enrolled in for PGDM. A student can also have multiple telephone numbers that must be stored. There are 6 terms in a PGDM programme. This term information should be stored such as the combination of  Term Number and year as the identifier. The other information relevant to term are Term begin date, Term end date etc. A catalog of courses must be stored that are offered to students during the 2-year PGDM programme.  Each course is identified by a course Id which is alphanumeric 8 length. The other related information for the course is course name, course description, core or elective, credits etc. must be stored.  A student can take several courses within a term. So, a data store of courses available at the term level must be maintained. In other words, a student has an association with a course_term and a student can take several course_term. Also, each course_term can be taken by many students. A course term is identified by the course id and term id as the identifier.
+
+ A list of faculty information identified by facultyId will be stored. The other information that are stored for faculty are Faculty name, qualification, experience, designation (professor/Adjunct Prof/Visiting Prof), DOB etc must be stored. Each faculty can teach multiple course_term and each course_term is taught by one faculty.
+
+CHRIST UNIVERSITY has a library which has  a wide range of books catalog in all functional areas that can be borrowed by students.  Each book in a book catalog is identified by a bookId. The other information stored for a book that need to be stored are ISBN number, Title of the book, price, edition, author, functional_area, No_copies.  date_borrowed, date_returned  etc. A student can borrow multiple books at a time and each book is borrowed by multiple students. When a book is borrowed, we should be able to identify on what date a book is borrowed, what is the due date and when the book was returned.
+
+Each student can publish a research paper during their PGDM programme. A faculty is also associated to a student to help them on writing the research paper. Each research paper is identified by a serialNo. The other attributes of the research paper are paperTitle, AreaOfResearch, startDate and EndDate. 
+
+Each student is also a member of various clubs at CHRIST UNIVERSITY. Each club has many students as its members. A club is identified by a club name which is a 10 (max) alpha numeric name. The other information that needs to be stored  about a club are description, secretary, president, club start date etc. We should be able to identify if a student is a member of some club and if so, what is the membership start date of that student for that club.
+
+Each student is also responsible for one Summer Internship Project during their course. This SIP information also needs to be stored. Information such as SIP project no, SIP name, company, Location, duration, Description etc must be stored.
+
+THIS IS THE CASE STUDY PROVIDED WHICH IS USED TO CREATE A ER DIAGRAM AND A FINAL REPORT WHICH CONSIST OF RELATIONAL MODEL IN Post-GRE SQL DATABASE.
